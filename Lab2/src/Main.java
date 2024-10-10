@@ -1,3 +1,5 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
     // Завдання 4
@@ -20,16 +22,16 @@ public class Main {
         // Для завдання 4
         double a1 = 3.56, b1 = 1.02, c1 = 3, d1 = 2.43;
         double result4 = task4(a1, b1, c1, d1);
-        System.out.printf("Результат завдання 4: %.4f%n", result4);
+        System.out.println("Результат завдання 4: " + result4);
 
         // Для завдання 14
         double a2 = 1.54, b2 = 0.49, c2 = 24.1, d2 = 0.87;
         double result14 = task14(a2, b2, c2, d2);
-        System.out.printf("Результат завдання 14: %.4f%n", result14);
+        System.out.println("Результат завдання 14: " + result14);
 
         // Для завдання 24
         double a3 = 0.345, b3 = -2.25, c3 = 2.65, d3 = 3.99;
         double result24 = task24(a3, b3, c3, d3);
-        System.out.printf("Результат завдання 24: %.4f%n", result24);
+        System.out.println("Результат завдання 24: " + result24);
     }
 }
