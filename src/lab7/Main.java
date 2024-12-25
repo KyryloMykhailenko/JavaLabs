@@ -90,25 +90,44 @@ class VideoBlog {
 // Головний клас
 public class Main {
     public static void main(String[] args) {
-        // Створення списку коментарів
-        List<Comment> comments = Arrays.asList(
+        // Створення коментарів для першого відео
+        List<Comment> comments1 = Arrays.asList(
                 new Comment("Очень полезное видео!", 50, 2),
                 new Comment("Спасибо за видос. Языки и проблемы у меня были практически те же!", 30, 1),
                 new Comment("Все верно среда один из сильнейших методов формирование поведения", 20, 3),
                 new Comment("Пойдёт, но много решает сознание и самодисциплина, выдержки и понимания всего вам надо, чудо программисты", 10, 5)
         );
 
-        // Створення відео
-        Video video = new Video(
+        // Перше відео
+        Video video1 = new Video(
                 "Кодинг стал ИЗИ после этого открытия! Вот как я это сделал!",
                 "https://www.youtube.com/watch?v=44Y-Mksajo0",
                 43080,
-                2100, // 2,1 тыс. преобразовано в 2100
+                2100, // 2,1 тыс. лайків
                 60,
-                comments
+                comments1
         );
 
-        List<Video> videos = Arrays.asList(video);
+        // Створення коментарів для другого відео
+        List<Comment> comments2 = Arrays.asList(
+                new Comment("Метод рабочий для материала, который можно понять за 10 минут. Но для сложнее концепций потребуется больше период активного изучения.", 25, 1),
+                new Comment("Отличный контент про обучение!", 15, 0),
+                new Comment("Спасибо за то что делитесь этой информацией", 10, 2),
+                new Comment("Хороший ролик, пробуйте и у вас всё получиться!", 5, 0)
+        );
+
+        // Друге відео
+        Video video2 = new Video(
+                "Научный метод, который изменит ваше обучение навсегда",
+                "https://www.youtube.com/watch?v=AXK5Zhx3GZM",
+                50544,
+                4000, // 4 тыс. лайків
+                66,
+                comments2
+        );
+
+        // Список відео
+        List<Video> videos = Arrays.asList(video1, video2);
         VideoBlog blog = new VideoBlog("TechBlogger", videos);
 
         // 1. Загальна кількість переглядів (нетипізований ітератор)
@@ -152,4 +171,5 @@ public class Main {
         }
     }
 }
+
 
